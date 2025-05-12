@@ -1,0 +1,108 @@
+/* style/feed.css */
+
+.feed-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f6f8; /* Softer background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  }
+  
+  .feed-container h1 {
+    color: #2c3e50; /* Darker heading */
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 2.8em;
+    border-bottom: 3px solid #e1e8ed; /* Light border */
+    padding-bottom: 15px;
+    width: 70%;
+    font-weight: 600;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Slightly wider min width */
+    gap: 35px;
+    width: 85%;
+    margin-bottom: 40px;
+  }
+  
+  .card-wrapper {
+    background-color: #fff; /* White cards */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08); /* More pronounced shadow */
+    border-radius: 12px; /* More rounded corners */
+    overflow: hidden;
+    transition: transform 0.25s cubic-bezier(0.075, 0.82, 0.165, 1); /* Smoother animation */
+  }
+  
+  .card-wrapper:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  }
+  
+  .card-wrapper .card {
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .card-wrapper .card-img-top {
+    height: 220px; /* Slightly taller image */
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .card-wrapper .card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; /* Allow body to grow and push button down */
+  }
+  
+  .card-wrapper .card-title {
+    font-size: 1.3em;
+    margin-bottom: 12px;
+    color: #34495e; /* Darker title */
+    font-weight: 500;
+  }
+  
+  .card-wrapper .card-text {
+    font-size: 0.95em;
+    color: #5e6e82; /* Softer text color */
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+
+  .card-wrapper .btn-primary {
+    background-color: #3498db; /* Vibrant blue */
+    border-color: #3498db;
+    color: white;
+    border-radius: 8px; /* More rounded button */
+    padding: 10px 20px; /* Slightly larger button */
+    font-size: 1em;
+    cursor: pointer;
+    transition: background;
+  }
+
+  .card-wrapper {
+    border: 2px solid black;
+    margin: 10px auto; 
+  }
+
+  .card-wrapper img {
+    width: 200px;
+    margin: 10px auto; 
+  }
+
+  .error {
+    color: #dc3545; /* Red color for error messages */
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2em;
+  }
