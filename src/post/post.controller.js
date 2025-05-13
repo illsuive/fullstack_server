@@ -42,7 +42,3 @@ let fetchPost = async (req,res)=> {
 
 export { createPost , fetchPost };
 
-
-// cybciv-4xebgo-Zavtoj
-
-// SHA256:yqjriFYi3XkulDWD0r5WYE3ZOyTh3Ilf11oPDW8lktk
